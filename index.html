@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyone Protocol - Research Paper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            display: flex;
+            gap: 20px;
+        }
+        .content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .pdf-viewer {
+            flex: 1.5;
+            background: #222;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+        h1, h2 {
+            color: #00feba;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 18px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #00feba, #5b548a);
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background: linear-gradient(45deg, #5b548a, #00feba);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Side: Text Content -->
+        <div class="content">
+            <h1>Anyone Protocol - Research Paper</h1>
+            <h2>Introduction</h2>
+            <p>The erosion of digital privacy has led to an era of mass surveillance...</p>
+
+            <h2>Architectural Foundations</h2>
+            <p>The Anyone Protocol is based on a multi-layered, decentralized architecture...</p>
+
+            <h2>Advanced Onion Routing</h2>
+            <p>Each message is multi-layer encrypted using AES-256 before transmission...</p>
+
+            <h2>Perfect Forward Secrecy (PFS)</h2>
+            <p>PFS ensures that even if an encryption key is compromised, past communications remain secure...</p>
+
+            <!-- Corrected Download Button -->
+            <a href="file:///var/www/html/pdfs/Anyone-Protocol.pdf" class="download-btn" download>Download Research Paper (PDF)</a>
+        </div>
+
+        <!-- Corrected PDF Viewer -->
+        <div class="pdf-viewer">
+            <iframe src="file:///var/www/html/pdfs/Anyone-Protocol.pdf"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
